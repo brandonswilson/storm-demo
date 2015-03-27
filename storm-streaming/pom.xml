@@ -11,17 +11,17 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring.version>2.5.6</spring.version>
-		<hadoop.version>2.4.0.2.1.1.0-385</hadoop.version>
-		<storm.version>0.9.1.2.1.1.0-385</storm.version>
-		<storm.kafka.version>0.9.1.2.1.1.0-385</storm.kafka.version>
-		<storm.hdfs.version>0.9.1.2.1.2.0-402</storm.hdfs.version>
-		<hbase.version>0.98.0.2.1.1.0-385-hadoop2</hbase.version>
+		<hadoop.version>2.6.0.2.2.0.0-2041</hadoop.version>
+		<storm.version>0.9.3.2.2.0.0-2041</storm.version>
+		<storm.kafka.version>0.9.3.2.2.0.0-2041</storm.kafka.version>
+		<storm.hdfs.version>0.9.3.2.2.0.0-2041</storm.hdfs.version>
+		<hbase.version>0.98.4.2.2.0.0-2041-hadoop2</hbase.version>
 		<active.mq.version>5.7.0</active.mq.version>
 		<truck.topology.domain.version>1.0.0-SNAPSHOT</truck.topology.domain.version>
 		<junit.version>4.5</junit.version>
 		<mail.version>1.4.3</mail.version>
 		<log4j.version>1.2.17</log4j.version>
-		<hive.version>0.13.0.2.1.1.0-385</hive.version>
+		<hive.version>0.14.0.2.2.0.0-2041</hive.version>
 	</properties>
 	
 	<repositories>
@@ -40,90 +40,89 @@
 	</repositories>
 
 	<dependencies>
-	
+
 		<dependency>
-		    <groupId>xerces</groupId>
-		    <artifactId>xercesImpl</artifactId>
-		    <version>2.9.1</version>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>2.9.1</version>
 		</dependency>
 		<dependency>
-		    <groupId>xalan</groupId>
-		    <artifactId>xalan</artifactId>
-		    <version>2.7.1</version>
-		</dependency>	
+			<groupId>xalan</groupId>
+			<artifactId>xalan</artifactId>
+			<version>2.7.1</version>
+		</dependency>
 
-		
+
 		<!-- Topology Domain Objects -->
 		<dependency>
-		  <groupId>poc.hortonworks.domain</groupId>
-		  <artifactId>transport-domain</artifactId>
-		  <version>${truck.topology.domain.version}</version>			
-		</dependency>		
-		 
+			<groupId>poc.hortonworks.domain</groupId>
+			<artifactId>transport-domain</artifactId>
+			<version>${truck.topology.domain.version}</version>
+		</dependency>
+
 		<!-- Storm Dependencies -->
-        <dependency>
-            <groupId>org.apache.storm</groupId>
-            <artifactId>storm-core</artifactId>
-            <version>${storm.version}</version>
-            <scope>provided</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>log4j-over-slf4j</artifactId>
-                </exclusion>
-                <exclusion>
-                	<groupId>org.slf4j</groupId>
-                	<artifactId>slf4j-log4j12</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-   
-        		
-		<!-- Storm Kafka Dependencies -->
 		<dependency>
 			<groupId>org.apache.storm</groupId>
+			<artifactId>storm-core</artifactId>
+			<version>${storm.version}</version>
+			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>log4j-over-slf4j</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+
+		<!-- Storm Kafka Dependencies -->
+		<dependency> <groupId>org.apache.storm</groupId>
 			<artifactId>storm-kafka</artifactId>
 			<version>${storm.kafka.version}</version>
 		</dependency>
-		
-		
+
+
 		<!-- Storm HDFS Dependencies -->
 		<dependency>
 			<groupId>org.apache.storm</groupId>
 			<artifactId>storm-hdfs</artifactId>
 			<version>${storm.hdfs.version}</version>
 		</dependency>
-		
+
 		<!-- Hadoop Dependencies -->
-		
-		
+
+
 		<dependency>
-		    <groupId>org.apache.hadoop</groupId>
-		    <artifactId>hadoop-client</artifactId>
-		    <version>${hadoop.version}</version>
-		    <exclusions>
-		        <exclusion>
-		            <groupId>org.slf4j</groupId>
-		            <artifactId>slf4j-log4j12</artifactId>
-		        </exclusion>
-		    </exclusions>
-		</dependency>		
-	
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-client</artifactId>
+			<version>${hadoop.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
 		<!-- HBase Dependcies -->
 		<dependency>
 			<groupId>org.apache.hbase</groupId>
 			<artifactId>hbase-client</artifactId>
 			<version>${hbase.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>log4j-over-slf4j</artifactId>
-                </exclusion>
-                <exclusion>
-                	<groupId>org.slf4j</groupId>
-                	<artifactId>slf4j-log4j12</artifactId>
-                </exclusion>
-            </exclusions>			
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>log4j-over-slf4j</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<!-- Hive dependencies -->
@@ -131,39 +130,20 @@
 			<groupId>org.apache.hive</groupId>
 			<artifactId>hive-exec</artifactId>
 			<version>${hive.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>log4j-over-slf4j</artifactId>
-                </exclusion>
-                <exclusion>
-                	<groupId>org.slf4j</groupId>
-                	<artifactId>slf4j-log4j12</artifactId>
-                </exclusion>
-            </exclusions>				
-    	</dependency>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>log4j-over-slf4j</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 
+		<!-- Other -->
 
-        <!-- SOLR dependencies. Next 2 are required -->
-        <dependency>
-            <groupId>org.apache.solr</groupId>
-            <artifactId>solr-solrj</artifactId>
-            <version>4.7.2</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.apache.zookeeper</groupId>
-                    <artifactId>zookeeper</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>4.3.1</version>
-        </dependency>
-
-        <!-- Other -->
-		
 		<dependency>
 			<groupId>javax.mail</groupId>
 			<artifactId>mailapi</artifactId>
@@ -174,33 +154,33 @@
 			<artifactId>mail</artifactId>
 			<version>${mail.version}</version>
 		</dependency>
-		
-		<dependency>        
-    		<groupId>log4j</groupId>        
-    		<artifactId>log4j</artifactId>        
-    		<version>${log4j.version}</version>    
-    	</dependency> 		
-    	<dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activemq-core</artifactId>
 			<version>${active.mq.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-mapper-asl</artifactId>
 			<version>1.9.13</version>
-		</dependency>		
-    	
-    	<!-- End of Other -->	
-		
+		</dependency>
+
+		<!-- End of Other -->
+
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 			<scope>test</scope>
-		</dependency>		
+		</dependency>
 		
 	</dependencies>
 

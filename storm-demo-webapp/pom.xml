@@ -10,7 +10,7 @@
 	<properties>
 		<org.springframework-version>4.0.0.BUILD-SNAPSHOT</org.springframework-version>
 		<org.springframework.security-version>3.2.0.RC2</org.springframework.security-version>
-		<hbase.version>0.98.0.2.1.1.0-385-hadoop2</hbase.version>
+		<hbase.version>0.98.4.2.2.0.0-2041-hadoop2</hbase.version>
 		<junit.version>4.5</junit.version>
 		<stream.simulator.version>1.0-SNAPSHOT</stream.simulator.version>
 	</properties>
