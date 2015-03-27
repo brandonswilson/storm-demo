@@ -1,0 +1,11 @@
+.idea
+/**/target
+/**/out
+*.iml
+
+target
+out
+
+*.log
+*.out
+stream-simulator/src/main/generated-source
