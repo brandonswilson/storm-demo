@@ -72,7 +72,7 @@ public class StreamGeneratorService {
 			master.tell(new StartSimulation(), master);
 		} catch (Exception e) {
 			throw new RuntimeException("Error running truck stream generator", e);
-		} 
+		}
 	
 	}
 	

@@ -20,12 +20,12 @@ function StreamGeneratorModel(stompClient) {
 	  self.eventCollectorClass2 = ko.observable("com.hortonworks.streaming.impl.collectors.KafkaEventCollector");
 	  self.events2 = ko.observable(200);
 	  //self.routeDirectory = ko.observable("/mnt/workspaces/storm-demo-webapp/storm-demo-webapp/routes/midwest");
-	  self.routeDirectory = ko.observable("/root/storm_demo/storm-demo-webapp/routes/midwest");
+	  self.routeDirectory = ko.observable("/root/storm-demo/storm-demo-webapp/routes/midwest");
 	  self.centerCoordinatesLat = ko.observable("38.523884");
 	  self.centerCoordinatesLong = ko.observable("-92.159845");
 	  self.zoomLevel=ko.observable("7");
 	  self.truckSymbolSize = ko.observable("10000");
-	  self.delayBetweenEvents = ko.observable("1500");
+	  self.delayBetweenEvents = ko.observable("2500");
 
 	  
 	  

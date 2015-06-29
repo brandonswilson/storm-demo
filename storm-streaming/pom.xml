@@ -15,6 +15,7 @@
 		<storm.version>0.9.3.2.2.4.0-2633</storm.version>
 		<storm.kafka.version>0.9.3.2.2.4.0-2633</storm.kafka.version>
 		<storm.hdfs.version>0.9.3.2.2.4.0-2633</storm.hdfs.version>
+		<kafka.version>0.8.1.2.2.4.0-2633</kafka.version>
 		<hbase.version>0.98.4.2.2.4.0-2633-hadoop2</hbase.version>
 		<active.mq.version>5.7.0</active.mq.version>
 		<truck.topology.domain.version>1.0.0-SNAPSHOT</truck.topology.domain.version>
@@ -76,6 +77,22 @@
 			<groupId>org.apache.storm</groupId>
 			<artifactId>storm-kafka</artifactId>
 			<version>${storm.kafka.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka_2.8.0</artifactId>
+			<version>${kafka.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>log4j-over-slf4j</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 
