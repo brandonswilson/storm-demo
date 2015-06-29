@@ -10,6 +10,26 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.apache.hbase:hbase-client:0.98.4.2.2.0.0-2041-hadoop2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hbase:hbase-common:0.98.4.2.2.0.0-2041-hadoop2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hbase:hbase-protocol:0.98.4.2.2.0.0-2041-hadoop2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper:3.4.6.2.2.0.0-2041" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-common:2.6.0.2.2.0.0-2041" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty:6.1.26.hwx" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.2.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.curator:curator-client:2.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.curator:curator-recipes:2.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.htrace:htrace-core:3.0.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-auth:2.6.0.2.2.0.0-2041" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.directory.server:apacheds-kerberos-codec:2.0.0-M15" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.directory.server:apacheds-i18n:2.0.0-M15" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.directory.api:api-asn1-api:1.0.0-M20" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.directory.api:api-util:1.0.0-M20" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.curator:curator-framework:2.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-core:2.6.0.2.2.0.0-2041" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-common:2.6.0.2.2.0.0-2041" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-api:2.6.0.2.2.0.0-2041" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-annotations:2.6.0.2.2.0.0-2041" level="project" />
     <orderEntry type="module" module-name="transport-domain" />
     <orderEntry type="library" name="Maven: org.apache.hbase:hbase-client:0.98.4.2.2.0.0-2041-hadoop2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hbase:hbase-common:0.98.4.2.2.0.0-2041-hadoop2" level="project" />
